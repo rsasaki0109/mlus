@@ -1,0 +1,20 @@
+{
+  "actual_oom_measured": false,
+  "calibration": "synthetic",
+  "declared_mib": 1000,
+  "kind": "synthetic_profile_feedback_not_gpu_measurement",
+  "synthetic_footprint_per_job_mib": 5000,
+  "timing_note": "fixed synthetic durations; infeasible baseline time is not usable throughput",
+  "with_profile": {
+    "footprint_exceeds_budget": false,
+    "makespan_ticks_if_every_job_runs": 12,
+    "peak_reserved_mib": 5128,
+    "peak_synthetic_footprint_mib": 5000
+  },
+  "without_profile": {
+    "footprint_exceeds_budget": true,
+    "makespan_ticks_if_every_job_runs": 3,
+    "peak_reserved_mib": 4000,
+    "peak_synthetic_footprint_mib": 20000
+  }
+}

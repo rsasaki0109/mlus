@@ -1,0 +1,7265 @@
+[
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1993,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": 75,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "checkpointed",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "waiting_resume"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 2,
+        "checkpoint": {
+          "attempt": 1,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 50
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1995,
+        "queue_ticket": 4,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 1,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 3,
+        "checkpoint": {
+          "attempt": 2,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 100
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1996,
+        "queue_ticket": 5,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 2,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 0
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0"
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 1985,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1992,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 4,
+        "checkpoint": {
+          "attempt": 3,
+          "checkpoint_path": "/tmp/tmp19413wkr/model.json",
+          "measurement": "simulation",
+          "resume_vram_mib": 7000,
+          "schema_version": 1,
+          "step": 150
+        },
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": {
+          "measurement": "simulation",
+          "outcome": "success",
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "schema_version": 1
+        },
+        "message": "child exited: exit status: 0",
+        "pid": 1997,
+        "queue_ticket": 6,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/workspace/mlus/examples/checkpoint_train.py",
+            "--checkpoint",
+            "/tmp/tmp19413wkr/model.json",
+            "--seconds",
+            ".65"
+          ],
+          "cooperative": true,
+          "priority": 0,
+          "profile": "demo:cpu-linear",
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 1994,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1.2)"
+          ],
+          "cooperative": false,
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-1985-1791450634062883747",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {
+      "demo:cpu-linear": {
+        "MOCK-0": {
+          "checkpoint_samples": 3,
+          "error_samples": 0,
+          "oom_floor_mib": 0,
+          "oom_samples": 0,
+          "peak_allocated_mib": 512,
+          "peak_reserved_mib": 1024,
+          "successful_samples": 1
+        }
+      }
+    },
+    "state_directory": "/tmp/tmp19413wkr/state",
+    "telemetry_error": null,
+    "version": "0.3.0",
+    "demo_training_result": {
+      "kind": "cpu_checkpoint_training",
+      "attempt": 4,
+      "start_step": 150,
+      "step": 200,
+      "loss": 4.97741383139796e-19,
+      "gpu_measurement": false
+    }
+  }
+]

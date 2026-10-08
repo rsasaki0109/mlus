@@ -1,0 +1,6162 @@
+[
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      },
+      {
+        "exit_code": null,
+        "gpu": null,
+        "id": 4,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 3577,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "jobs": [
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 1,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3584,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 2,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3585,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(2)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-1",
+        "id": 3,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3587,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 4,
+        "memory_report": null,
+        "message": "child exited: exit status: 0",
+        "pid": 3586,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; time.sleep(1)"
+          ],
+          "priority": 5,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/mlus-3577-1791449351556274254",
+    "margin_mib": 512,
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "telemetry_error": null
+  }
+]

@@ -1,0 +1,6115 @@
+[
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Live family: next job waits for the lease",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6606,
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 2,
+          "leader_exited": false,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": [
+      6607,
+      6608
+    ]
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      },
+      {
+        "attempts": 0,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": null,
+        "id": 3,
+        "memory_report": null,
+        "message": "waiting for free VRAM plus safety margin and reservations",
+        "pid": null,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 0,
+        "state": "queued"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": true,
+          "job_id": 2,
+          "leader_exited": true,
+          "pgid": 6606
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "running"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        },
+        {
+          "cleanup_pending": false,
+          "job_id": 3,
+          "leader_exited": false,
+          "pgid": 6609
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Parent exits: group cleanup precedes the next admission",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  },
+  {
+    "backend": "mock",
+    "daemon_pid": 6598,
+    "gpu_processes": [],
+    "gpus": [
+      {
+        "total_mib": 8192,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-0"
+      },
+      {
+        "total_mib": 12288,
+        "used_mib": 0,
+        "utilization": 0,
+        "uuid": "MOCK-1"
+      }
+    ],
+    "job_store_error": null,
+    "jobs": [
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": null,
+        "gpu": "MOCK-1",
+        "id": 1,
+        "memory_report": null,
+        "message": "admitted; reservation is advisory",
+        "pid": 6605,
+        "queue_ticket": 1,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "from pathlib import Path; import time; p=Path('/tmp/tmpp42z2lag/other')\nwhile not p.exists(): time.sleep(.02)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 11000
+        },
+        "reservation_mib": 11000,
+        "state": "running"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 2,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6606,
+        "queue_ticket": 2,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "/tmp/tmpp42z2lag/demo.py"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      },
+      {
+        "attempts": 1,
+        "checkpoint": null,
+        "exit_code": 0,
+        "gpu": "MOCK-0",
+        "id": 3,
+        "memory_report": null,
+        "message": "worker group cleaned up; leader exited: exit status: 0",
+        "pid": 6609,
+        "queue_ticket": 3,
+        "report_error": null,
+        "request": {
+          "command": [
+            "python3",
+            "-c",
+            "import os,time\nfor pid in [6606, 6607, 6608]:\n try:os.kill(pid,0)\n except ProcessLookupError:continue\n raise RuntimeError('prior job was not fully reaped')\ntime.sleep(.6)"
+          ],
+          "cooperative": false,
+          "priority": 0,
+          "profile": null,
+          "vram_mib": 7000
+        },
+        "reservation_mib": 7000,
+        "state": "succeeded"
+      }
+    ],
+    "log_directory": "/tmp/tmpp42z2lag/state/runs/mock-6598-1791460386127706119",
+    "margin_mib": 512,
+    "process_management": {
+      "cleanup_error": null,
+      "escaped_children": [],
+      "mode": "linux_process_group",
+      "subreaper": true,
+      "workers": [
+        {
+          "cleanup_pending": false,
+          "job_id": 1,
+          "leader_exited": false,
+          "pgid": 6605
+        }
+      ]
+    },
+    "process_telemetry_error": null,
+    "profile_headroom_mib": 128,
+    "profile_store_error": null,
+    "profiles": {},
+    "recovery_required": false,
+    "state_directory": "/tmp/tmpp42z2lag/state",
+    "telemetry_error": null,
+    "version": "0.5.0",
+    "working_directory": "/tmp/tmpp42z2lag/work",
+    "demo_phase": "Complete: all 3 original processes are reaped",
+    "demo_family_pids": [
+      6606,
+      6607,
+      6608
+    ],
+    "demo_alive_pids": []
+  }
+]

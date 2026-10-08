@@ -1,0 +1,38 @@
+{
+  "durations_ticks": [
+    3,
+    2,
+    4,
+    1
+  ],
+  "gpu_total_mib": 8192,
+  "jobs_mib": [
+    3000,
+    3000,
+    3000,
+    3000
+  ],
+  "kind": "deterministic_simulation_not_gpu_measurement",
+  "margin_mib": 512,
+  "mlus": {
+    "completed": 4,
+    "exceeds_budget": false,
+    "makespan_ticks": 6,
+    "peak_reserved_mib": 6000,
+    "start_ticks": [
+      0,
+      0,
+      2,
+      3
+    ]
+  },
+  "serial": {
+    "makespan_ticks": 10,
+    "peak_reserved_mib": 3000
+  },
+  "unrestricted_launch": {
+    "actual_oom_measured": false,
+    "exceeds_budget": true,
+    "peak_requested_mib": 12000
+  }
+}
